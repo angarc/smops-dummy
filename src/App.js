@@ -1,13 +1,22 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './App.css';
 
-import LoginScreen from './screens/LoginScreen/LoginScreen'
+import LoginScreen from './screens/LoginScreen/LoginScreen';
+import MainScreen from './screens/MainScreen/MainScreen';
 
 function App() {
   return (
-    <div className="App">
-      <LoginScreen/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <LoginScreen/>
+        </Route>
+        <Route path="/main">
+          <MainScreen />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

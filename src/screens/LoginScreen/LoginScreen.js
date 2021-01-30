@@ -22,9 +22,11 @@ const loginScreen = () => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
-                        <Button variant="primary" type="submit" className="btn-block mt-5">
-                            Login
-                        </Button>
+                        <a href="/main">
+                            <Button variant="primary" type="submit" className="btn-block mt-5">
+                                Login
+                            </Button>
+                        </a>
                     </Form>
                 </Card.Body>
             </Card>
